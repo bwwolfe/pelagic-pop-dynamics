@@ -1,7 +1,7 @@
 #### pelagic-pop-dynamics
 
-# Three Level Lotka-Volterra Predator-Prey simulation.
-
+# Lotka-Volterra predator-predator-prey simulation
+### [Link to the App](https://recfish.pelagic-movement.cloud.edu.au/shiny/ksm723/)
 In this simple pelagic ecosystem, the flow of trophic energy looks like this:
 
 ```mermaid
