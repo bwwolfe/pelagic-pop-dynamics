@@ -2,6 +2,8 @@
 
 # Three Level Lotka-Volterra Predator-Prey simulation.
 
+In this simple pelagic ecosystem, the flow of trophic energy looks like this:
+
 ```mermaid
 %%{
   init: {
