@@ -68,7 +68,8 @@ So only Tunas have a fixed population growth rate, for seals and white sharks th
 ### **Wish list**
   * Two level dynamics (without just extincting white shark)
   * Functional responses
-  * Smarter/controllable y axes. For now I think the `clip = off` overshoot is a good compromise.
-  * Check on magnitude of variables if 'realistic'
+  * Smarter/controllable y axes. For now I think the `clip = off` compromise.
+ 
+  [* magnitude of variables if 'realistic']: #
 
 *Inspiration from [Russell Hung's original](https://github.com/RussH-code/Three-Species-Lotka-Volterra-Model/tree/main)*
