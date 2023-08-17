@@ -7,6 +7,7 @@
 In this simple pelagic ecosystem, the flow of trophic energy looks like this:
 
 ```mermaid
+
 %%{
   init: {
     'theme': 'base',
@@ -17,8 +18,7 @@ In this simple pelagic ecosystem, the flow of trophic energy looks like this:
       'lineColor': '#FF0000',
       'secondaryColor': '#006100',
       'tertiaryColor': '#fff'
-    }
-  }
+    }}
 }%%
 graph LR
     A(Tuna) --> B(Seal)
