@@ -1,6 +1,6 @@
 #### pelagic-pop-dynamics
 
-## `app.r` contains a shiny app for a Three Level Lotka-Volterra Predator-Prey simulation.
+Three Level Lotka-Volterra Predator-Prey simulation.
 
 ```mermaid
 %%{
