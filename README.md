@@ -1,6 +1,6 @@
 #### pelagic-pop-dynamics
 
-Three Level Lotka-Volterra Predator-Prey simulation.
+# Three Level Lotka-Volterra Predator-Prey simulation.
 
 ```mermaid
 %%{
