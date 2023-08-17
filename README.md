@@ -1,23 +1,6 @@
-# pelagic-pop-dynamics
+#### pelagic-pop-dynamics
 
-`app.r` contains a shiny app for a Three Level Lotka-Volterra Predator-Prey simulation.
-
-Three species:  
-* **Tuna are the prey**
-  * $R$ = Tuna abundance (initially, 2500 individuals)
-  * $K$ = the carrying capacity of tuna the environment can support.
-  * $r$ = is the intrinsic rate of increase of tuna.
-* **Seals eat tunas.**
-  * $N$ = seal population
-  * $a$ = the encounter rate of seals with tunas. The simulation assumes random movements of both and when encountered tuna are eaten.
-  * $f$ = conversion efficiency of tunas into seals. Fixed at a classic 10% (0.1)
-  * $q$ = mortality rate of seals. Fixed at 0.05.
-* **White Sharks eat seals.** (They don't bother with tunas in this particular ecosystem).
-  * $P$ = white shark population
-  * $e$ = the encounter rate of white sharks with seals. Same assumptions as with $a$.
-  * $z$ = conversion efficiency of seals into white sharks. Fixed at a classic 10% (0.1)
-  * $b$ = mortality rate of white sharks. Fixed at 0.05.
-
+## `app.r` contains a shiny app for a Three Level Lotka-Volterra Predator-Prey simulation.
 
 ```mermaid
 %%{
@@ -43,10 +26,25 @@ graph LR
      class A A
      class B B
      class C C
-
 ```
+
+### Three species:  
+* **Tuna are the prey**
+  * $R$ = Tuna abundance (initially, 2500 individuals)
+  * $K$ = the carrying capacity of tuna the environment can support.
+  * $r$ = is the intrinsic rate of increase of tuna.
+* **Seals eat tunas.**
+  * $N$ = seal population
+  * $a$ = the encounter rate of seals with tunas. The simulation assumes random movements of both and when encountered tuna are eaten.
+  * $f$ = conversion efficiency of tunas into seals. Fixed at a classic 10% (0.1)
+  * $q$ = mortality rate of seals. Fixed at 0.05.
+* **White Sharks eat seals.** (They don't bother with tunas in this particular ecosystem).
+  * $P$ = white shark population
+  * $e$ = the encounter rate of white sharks with seals. Same assumptions as with $a$.
+  * $z$ = conversion efficiency of seals into white sharks. Fixed at a classic 10% (0.1)
+  * $b$ = mortality rate of white sharks. Fixed at 0.05.
     
-The model is described by the following set of differential equations:
+### The model is described by the following set of differential equations:
 
 $$
 \\begin{align*}
@@ -58,12 +56,12 @@ $$
 
 So only Tunas have a fixed population growth rate, for seals and white sharks their population growth rates are entirely determined by converting prey into new individuals, minus predations, minus 'natural' mortalities.
 
-Notes on demonstrable phenomena
+### Notes on demonstrable phenomena
   *  The simulations with initial settings result in extinctions of the predators. What changes allow coexistence? What variables don't matter too much?
   *  Once the populations are stable, what happens to the population levels of the three species when the seal attack rate is decreased?
   *  What happens to population levels when the tuna growth rate is increased? **Paradox of Enrichment** *(I think)*
 
-**Wish list**
+### **Wish list**
   * Two level dynamics (without just extincting white shark)
   * Functional responses
   * Smarter/controllable y axes. For now I think the `clip = off` overshoot is a good compromise.
