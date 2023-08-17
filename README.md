@@ -61,7 +61,9 @@ So only Tunas have a fixed population growth rate, for seals and white sharks th
 ### Notes on demonstrable phenomena
   *  The simulations with initial settings result in extinctions of the predators. What changes allow coexistence? What variables don't matter too much?
   *  Once the populations are stable, what happens to the population levels of the three species when the seal attack rate is decreased?
-  *  What happens to population levels when the tuna growth rate is increased? **Paradox of Enrichment** *(I think)*
+  *  What happens to population levels when the tuna growth rate is increased?
+  
+ [ I think that last one is the **Paradox of Enrichment** ]: #
 
 ### **Wish list**
   * Two level dynamics (without just extincting white shark)
